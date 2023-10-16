@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"guthib.com/traefik/fromage"
+	"guthib.com/sayphp/fromage"
 )
 
 func main() {

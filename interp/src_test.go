@@ -15,15 +15,15 @@ func Test_effectivePkg(t *testing.T) {
 	}{
 		{
 			desc:     "path is a subpackage",
-			root:     "github.com/foo/plugin/vendor/guthib.com/traefik/fromage",
-			path:     "guthib.com/traefik/fromage/couteau/lol",
-			expected: "github.com/foo/plugin/vendor/guthib.com/traefik/fromage/couteau/lol",
+			root:     "github.com/foo/plugin/vendor/guthib.com/sayphp/fromage",
+			path:     "guthib.com/sayphp/fromage/couteau/lol",
+			expected: "github.com/foo/plugin/vendor/guthib.com/sayphp/fromage/couteau/lol",
 		},
 		{
 			desc:     "path is a vendored package",
-			root:     "github.com/foo/plugin/vendor/guthib.com/traefik/fromage",
-			path:     "vendor/guthib.com/traefik/vin",
-			expected: "github.com/foo/plugin/vendor/guthib.com/traefik/fromage/vendor/guthib.com/traefik/vin",
+			root:     "github.com/foo/plugin/vendor/guthib.com/sayphp/fromage",
+			path:     "vendor/guthib.com/sayphp/vin",
+			expected: "github.com/foo/plugin/vendor/guthib.com/sayphp/fromage/vendor/guthib.com/sayphp/vin",
 		},
 		{
 			desc:     "path is non-existent",
@@ -207,13 +207,13 @@ func Test_previousRoot(t *testing.T) {
 		},
 		{
 			desc:     "vendor level 1",
-			root:     "github.com/foo/pkg/vendor/guthib.com/traefik/fromage",
+			root:     "github.com/foo/pkg/vendor/guthib.com/sayphp/fromage",
 			expected: "github.com/foo/pkg",
 		},
 		{
 			desc:     "vendor level 2",
-			root:     "github.com/foo/pkg/vendor/guthib.com/traefik/fromage/vendor/guthib.com/traefik/fuu",
-			expected: "github.com/foo/pkg/vendor/guthib.com/traefik/fromage",
+			root:     "github.com/foo/pkg/vendor/guthib.com/sayphp/fromage/vendor/guthib.com/sayphp/fuu",
+			expected: "github.com/foo/pkg/vendor/guthib.com/sayphp/fromage",
 		},
 		{
 			desc:           "vendor is sibling",

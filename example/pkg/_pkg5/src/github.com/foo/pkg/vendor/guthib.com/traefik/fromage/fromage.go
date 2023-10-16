@@ -3,8 +3,8 @@ package fromage
 import (
 	"fmt"
 
-	"guthib.com/traefik/cheese"
-	"guthib.com/traefik/fromage/couteau"
+	"guthib.com/sayphp/cheese"
+	"guthib.com/sayphp/fromage/couteau"
 )
 
 func Hello() string {

@@ -48,13 +48,13 @@ archives:
 
 brews:
   - tap:
-      owner: traefik
+      owner: sayphp
       name: homebrew-tap
     commit_author:
-      name: traefiker
-      email: 30906710+traefiker@users.noreply.github.com
+      name: sayphper
+      email: 30906710+sayphper@users.noreply.github.com
     folder: Formula
-    homepage: https://github.com/traefik/yaegi
+    homepage: https://github.com/sayphp/yaegi
     description: |
       Yaegi is Another Elegant Go Interpreter.
       It powers executable Go scripts and plugins, in embedded interpreters

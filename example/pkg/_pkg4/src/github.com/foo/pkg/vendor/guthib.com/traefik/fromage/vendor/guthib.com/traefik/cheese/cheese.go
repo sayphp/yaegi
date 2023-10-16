@@ -3,7 +3,7 @@ package cheese
 import (
 	"fmt"
 
-	"guthib.com/traefik/cheese/vin"
+	"guthib.com/sayphp/cheese/vin"
 )
 
 func Hello() string {

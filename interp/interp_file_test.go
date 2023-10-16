@@ -11,9 +11,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/traefik/yaegi/interp"
-	"github.com/traefik/yaegi/stdlib"
-	"github.com/traefik/yaegi/stdlib/unsafe"
+	"github.com/sayphp/yaegi/interp"
+	"github.com/sayphp/yaegi/stdlib"
+	"github.com/sayphp/yaegi/stdlib/unsafe"
 )
 
 func TestFile(t *testing.T) {

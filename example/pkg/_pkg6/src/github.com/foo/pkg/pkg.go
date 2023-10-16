@@ -3,7 +3,7 @@ package pkg
 import (
 	"fmt"
 
-	"guthib.com/traefik/fromage"
+	"guthib.com/sayphp/fromage"
 )
 
 func Here() string {

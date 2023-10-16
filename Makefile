@@ -25,6 +25,6 @@ tests:
 
 # https://github.com/goreleaser/godownloader
 install.sh: .goreleaser.yml
-	godownloader --repo=traefik/yaegi -o install.sh .goreleaser.yml
+	godownloader --repo=sayphp/yaegi -o install.sh .goreleaser.yml
 
 .PHONY: check gen_all_syscall gen_tests generate_downloader internal/cmd/extract/extract install

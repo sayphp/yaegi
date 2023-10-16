@@ -3,7 +3,7 @@ package vin
 import (
 	"fmt"
 
-	"guthib.com/traefik/cheese"
+	"guthib.com/sayphp/cheese"
 )
 
 func Hello() string {

@@ -20,8 +20,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/traefik/yaegi/interp"
-	"github.com/traefik/yaegi/stdlib"
+	"github.com/sayphp/yaegi/interp"
+	"github.com/sayphp/yaegi/stdlib"
 )
 
 func init() { log.SetFlags(log.Lshortfile) }
@@ -1714,7 +1714,7 @@ func TestStdio(t *testing.T) {
 
 func TestNoGoFiles(t *testing.T) {
 	i := interp.New(interp.Options{GoPath: build.Default.GOPATH})
-	_, err := i.Eval(`import "github.com/traefik/yaegi/_test/p3"`)
+	_, err := i.Eval(`import "github.com/sayphp/yaegi/_test/p3"`)
 	if strings.Contains(err.Error(), "no Go files in") {
 		return
 	}
